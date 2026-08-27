@@ -1,0 +1,14 @@
+* Thành phần private và public
+-Thành phần private
+  +Là khu vực dành riêng cho lớp, không chia sẻ với bất kì lớp khác từ bên ngoài.
+  +Thành phần private chỉ cho phép truy cập trong phạm vi nội bộ lớp.
+  +Thông thường các thành phần sau sẽ được đặt vào khu vực private của lớp:
+    Tất cả các thuộc tính dữ liệu của lớp
+    Các phương thức trung gian, được sử dụng như các bước tính toán đệm cho các phương thức khác.
+-Thành phần public:
+  +Là khu vực mà Lớp có thể chia sẻ với tất cả các chương trình và đối tượng bên ngoài. Có thể truy cập
+     Bên trong lớp
+     Bên ngoài lớp
+  +Các thành phần sẽ được đặt vào vùng chia sẻ public của lớp:
+    Các phương thức để nhập/xem (set/get) các thuộc tính dữ liệu của lớp.
+    Các phương thức cung cấp chức năng hoạt động, cách cư xử của đối tượng đối với môi trường bên ngoài. Các phương thức này thể hiện chức năng của các đối tượng lớp.
