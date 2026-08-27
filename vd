@@ -1,0 +1,4 @@
+Ví dụ về Két sắt trong nhà
+Hãy tưởng tượng nhà bạn là một Lớp (Class):
+Tiền và vàng bên trong két (private): Đây là tài sản riêng tư của gia đình bạn. Người ngoài đi ngang qua nhà (hàm main bên ngoài) không thể tự ý thò tay vào trong két để lấy tiền hoặc nhét thêm tiền vào được. Chỉ có người trong nhà (các hàm nội bộ của lớp) mới biết mật mã để mở két.
+Cánh cửa nhà hoặc Chuông cửa (public): Đây là nơi công khai. Người ngoài có thể đến bấm chuông hoặc gõ cửa để giao tiếp với người trong nhà.
