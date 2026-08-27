@@ -1,0 +1,35 @@
+1.Tính trừu tượng hóa đối tượng 
+a, Theo chức năng
+Là qua trình mô hình hóa phương thức của lớp dựa trên các hoạt động của các đối tượng.
+Các bước tiến hành:
+  - Tập hợp tất cả các hành động có thể có của các đối tượng.
+  - Nhóm các đối tượng có các hoạt động tương tự nhau
+  - Mỗi nhóm đối tượng đề xuất một lớp tương ứng.
+  - Các hành động chung của nhóm đối tượng sẽ cấu thành các phương thức của lớp tương ứng.
+Ví dụ, mỗi ô tô là một đối tượng, chung các hành động: có thể khởi động máy, có thể chạy, có thể dừng lại, có thể tắt máy.
+b, Theo dữ liệu
+Là quá trình mô hình hoá các thuộc tính của lớp dựa trên các thuộc tính của các đối tượng tương ứng.
+Ví dụ, mỗi ô tô là một đối tượng có chung các thuộc tính: nhãn hiệu, màu sắc, giá bán, công suất động cơ.Ngoài ra, một số ít xe có thể có thêm các thuộc tính:dàn nghe nhạc, màn hình xem ti vi, kính chống nắng, chống đạn...
+2.Tính kế thừa
+- Cho phép lớp dẫn xuất có thể sử dụng các thuộc tính và phương thức của lớp cơ sở
+- Cho phép việc chỉ cần cài đặt phương thức ở một lớp cơ sở, mà có thể sử dụng được ở tất cả các lớp dẫn xuất.
+- Cho phép tránh sự cài đặt trùng lặp mã nguồn của chương trình.
+- Cho phép chỉ phải thay đổi một lần khi cần phải thay đổi dữ liệu của các lớp.
+Ví dụ minh họa:
+Hãy tưởng tượng bạn đang quản lý một Cửa hàng điện thoại. Trong cửa hàng của bạn có rất nhiều loại điện thoại như iPhone 15, Samsung Galaxy S24, Xiaomi 14...Thay vì mỗi khi nhập một chiếc điện thoại mới về, bạn phải ngồi liệt kê lại từ đầu tất cả các chức năng cơ bản, bạn sẽ tạo ra một bộ khung thiết kế chung gọi là Điện thoại cơ bản (Lớp cha).
+1. Lớp cha: Điện thoại cơ bảnTất cả mọi chiếc điện thoại trên đời này, dù rẻ hay đắt, đều có sẵn
+- Đặc điểm (Thuộc tính): Có màn hình, có pin, có loa, có số IMEI.
+- Chức năng (Phương thức): Gọi điện, nhắn tin, sạc pin.
+2.Các lớp con: kế thừa từ điện thoạt cơ bản
+- Điện thoại iPhone (Lớp con 1):Tự động có sẵn: Màn hình, gọi điện, nhắn tin (kế thừa từ lớp cha).Bổ sung thêm đặc điểm riêng: Hệ điều hành iOS, mở khóa khuôn mặt (FaceID), cổng sạc Type-C.
+- Điện thoại Samsung (Lớp con 2):Tự động có sẵn: Màn hình, gọi điện, nhắn tin (kế thừa từ lớp cha).Bổ sung thêm đặc điểm riêng: Hệ điều hành Android, bút cảm ứng S-Pen, màn hình gập.
+3.Tính đóng gói
+- Cho phép che giấu sự cài đặt chi tiết bên trong của phương thức.
+- Cho phép che giấu dữ liệu bên trong của đối tượng.
+- Cho phép hạn chế tối đa việc sửa lại mã chương trình.
+Ví dụ: Chiếc Cây ATM. Bạn không thể biết linh kiện và tiền bên trong sắp xếp ra sao (Che giấu). Bạn chỉ có thể tương tác thông qua màn hình và khe đút thẻ (Cửa khẩu).
+4.Tính đa hình
+- Cho phép các lớp được định nghĩa các phương thức trùng nhau: cùng tên, cùng số lượng và kiểu tham số, cùng kiểu trả về.
+- Việc định nghĩa phương thức trùng nhau của các lớp kế thừa nhau còn được gọi là sự nạp chồng phương thức.
+- Khi gọi các phương thức trùng tên, dựa vào đối tượng đang gọi mà chương trình sẽ thực hiện phương thức của lớp tương ứng.
+Ví dụ: Hành động "Kêu" của Động vật.Cùng là hành động keu(), nhưng nếu gọi con Chó nó sẽ sủa "Gâu gâu", còn gọi con Mèo nó sẽ kêu "Meo meo". Bạn không cần tạo ra 2 hàm khác tên là sua() và meo(), chỉ cần gọi đúng một hàm keu().
